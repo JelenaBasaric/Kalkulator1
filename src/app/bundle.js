@@ -1,4 +1,4 @@
-<(function() {
+(function() {
     "use strict";
     function _classCallCheck(e, t) {
         if (!(e instanceof t))
