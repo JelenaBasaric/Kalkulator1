@@ -252,30 +252,30 @@
         }, {
             key: "render",
             value: function() {
-                return React.createElement("div", null, React.createElement("div", {
+                return createElement("div", null,createElement("div", {
                     className: "calculator"
-                }, React.createElement(Formula, {
+                }, createElement(Formula, {
                     formula: this.state.formula.replace(/x/g, "⋅")
-                }), React.createElement(Output, {
+                }), createElement(Output, {
                     currentValue: this.state.currentVal
-                }), React.createElement(Buttons, {
+                }), createElement(Buttons, {
                     decimal: this.handleDecimal,
                     evaluate: this.handleEvaluate,
                     initialize: this.initialize,
                     numbers: this.handleNumbers,
                     operators: this.handleOperators
-                })), React.createElement("div", {
+                })), createElement("div", {
                     className: "author"
-                }, " ", "Designed and Coded By ", React.createElement("br", null), React.createElement("a", {
+                }, " ", "Designed and Coded By ", createElement("br", null), createElement("a", {
                     href: "https://goo.gl/6NNLMG",
                     target: "_blank"
-                }, "Peter Weinberg")))
+                }, "Jelena Basaric")))
             }
         }]),
         Calculator
-    }(React.Component)
+    }(Component)
       , Buttons = function(e) {
-        _inherits(r, React.Component);
+        _inherits(r, Component);
         var t = _createSuper(r);
         function r() {
             return _classCallCheck(this, r),
@@ -284,78 +284,78 @@
         return _createClass(r, [{
             key: "render",
             value: function() {
-                return React.createElement("div", null, React.createElement("button", {
+                return createElement("div", null, createElement("button", {
                     className: "jumbo",
                     id: "clear",
                     onClick: this.props.initialize,
                     style: clearStyle,
                     value: "AC"
-                }, "AC"), React.createElement("button", {
+                }, "AC"), createElement("button", {
                     id: "divide",
                     onClick: this.props.operators,
                     style: operatorStyle,
                     value: "/"
-                }, "/"), React.createElement("button", {
+                }, "/"), createElement("button", {
                     id: "multiply",
                     onClick: this.props.operators,
                     style: operatorStyle,
                     value: "x"
-                }, "x"), React.createElement("button", {
+                }, "x"), createElement("button", {
                     id: "seven",
                     onClick: this.props.numbers,
                     value: "7"
-                }, "7"), React.createElement("button", {
+                }, "7"), createElement("button", {
                     id: "eight",
                     onClick: this.props.numbers,
                     value: "8"
-                }, "8"), React.createElement("button", {
+                }, "8"), createElement("button", {
                     id: "nine",
                     onClick: this.props.numbers,
                     value: "9"
-                }, "9"), React.createElement("button", {
+                }, "9"), createElement("button", {
                     id: "subtract",
                     onClick: this.props.operators,
                     style: operatorStyle,
                     value: "‑"
-                }, "‑"), React.createElement("button", {
+                }, "‑"), createElement("button", {
                     id: "four",
                     onClick: this.props.numbers,
                     value: "4"
-                }, "4"), React.createElement("button", {
+                }, "4"), createElement("button", {
                     id: "five",
                     onClick: this.props.numbers,
                     value: "5"
-                }, "5"), React.createElement("button", {
+                }, "5"), createElement("button", {
                     id: "six",
                     onClick: this.props.numbers,
                     value: "6"
-                }, "6"), React.createElement("button", {
+                }, "6"), createElement("button", {
                     id: "add",
                     onClick: this.props.operators,
                     style: operatorStyle,
                     value: "+"
-                }, "+"), React.createElement("button", {
+                }, "+"),createElement("button", {
                     id: "one",
                     onClick: this.props.numbers,
                     value: "1"
-                }, "1"), React.createElement("button", {
+                }, "1"), createElement("button", {
                     id: "two",
                     onClick: this.props.numbers,
                     value: "2"
-                }, "2"), React.createElement("button", {
+                }, "2"), createElement("button", {
                     id: "three",
                     onClick: this.props.numbers,
                     value: "3"
-                }, "3"), React.createElement("button", {
+                }, "3"), createElement("button", {
                     className: "jumbo",
                     id: "zero",
                     onClick: this.props.numbers,
                     value: "0"
-                }, "0"), React.createElement("button", {
+                }, "0"), createElement("button", {
                     id: "decimal",
                     onClick: this.props.decimal,
                     value: "."
-                }, "."), React.createElement("button", {
+                }, "."), createElement("button", {
                     id: "equals",
                     onClick: this.props.evaluate,
                     style: equalsStyle,
@@ -366,7 +366,7 @@
         r
     }()
       , Output = function(e) {
-        _inherits(r, React.Component);
+        _inherits(r, Component);
         var t = _createSuper(r);
         function r() {
             return _classCallCheck(this, r),
@@ -375,7 +375,7 @@
         return _createClass(r, [{
             key: "render",
             value: function() {
-                return React.createElement("div", {
+                return createElement("div", {
                     className: "outputScreen",
                     id: "display"
                 }, this.props.currentValue)
@@ -393,13 +393,13 @@
         return _createClass(r, [{
             key: "render",
             value: function() {
-                return React.createElement("div", {
+                return createElement("div", {
                     className: "formulaScreen"
                 }, this.props.formula)
             }
         }]),
         r
     }();
-    ReactDOM.render(React.createElement(Calculator, null), document.getElementById("app"))
+    render(createElement(Calculator, null), document.getElementById("app"))
 }
 )();
