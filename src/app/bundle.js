@@ -273,7 +273,8 @@
             }
         }]),
         Calculator
-    }(Component)
+    }
+    (Component)
       , Buttons = function(e) {
         _inherits(r, Component);
         var t = _createSuper(r);
@@ -289,8 +290,8 @@
                     id: "clear",
                     onClick: this.props.initialize,
                     style: clearStyle,
-                    value: "AC"
-                }, "AC"), createElement("button", {
+                    value: "C"
+                }, "C"), createElement("button", {
                     id: "divide",
                     onClick: this.props.operators,
                     style: operatorStyle,
@@ -299,8 +300,8 @@
                     id: "multiply",
                     onClick: this.props.operators,
                     style: operatorStyle,
-                    value: "x"
-                }, "x"), createElement("button", {
+                    value: "*"
+                }, "*"), createElement("button", {
                     id: "seven",
                     onClick: this.props.numbers,
                     value: "7"
